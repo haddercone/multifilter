@@ -27,13 +27,10 @@ function App() {
 			.includes(query.toLowerCase());
 
 		if (filterUserByEmail) {
-			console.log("email run");
 			return filterUserByEmail;
 		} else if (filterUserByname) {
-			console.log("name run");
 			return filterUserByname;
 		} else if (filterUserByUserName) {
-			console.log("username run");
 			return filterUserByUserName;
 		} else {
 			return null;
