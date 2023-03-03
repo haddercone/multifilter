@@ -16,25 +16,11 @@ function App() {
 
 	// using derived state from users to filter the data
 	const filteredUsers = users.filter((user) => {
-		const filterUserByname = user.name
-			.toLowerCase()
-			.includes(query.toLowerCase());
-		const filterUserByEmail = user.email
-			.toLowerCase()
-			.includes(query.toLowerCase());
-		const filterUserByUserName = user.username
-			.toLowerCase()
-			.includes(query.toLowerCase());
-
-		if (filterUserByEmail) {
-			return filterUserByEmail;
-		} else if (filterUserByname) {
-			return filterUserByname;
-		} else if (filterUserByUserName) {
-			return filterUserByUserName;
-		} else {
-			return null;
-		}
+		const userDetails = user.name + user.username + user.email;
+		const hasText = userDetails.toLowerCase().includes(query.toLowerCase());
+		if(!hasText) return null;
+		console.log("filter called");
+		return hasText;
 	});
 
 	return (
