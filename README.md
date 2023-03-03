@@ -6,18 +6,21 @@
     - username
     - email
 ## To use the app in local environment:
-
-1. Go to  multifilter directory: 
+1. Install dependencies
+    ```
+    npm install
+    ```
+2. Go to  multifilter directory: 
 
     ```
     cd multifilter
     ```
 
-2. intall dependencies: 
+3. intall dependencies: 
     ```
     npm install
     ```
-3. run application:
+4. run application:
     ```
     npm start
     ```
