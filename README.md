@@ -1,5 +1,5 @@
 # Multifilter search
-## This is a small application thet implements multifilter search.
+## This is a small application that implements multifilter search.
 ## Feature : 
 - Search users by : 
     - name

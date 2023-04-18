@@ -18,7 +18,7 @@ function App() {
 	const filteredUsers = users.filter((user) => {
 		const userDetails = user.name + user.username + user.email;
 		const hasText = userDetails.toLowerCase().includes(query.toLowerCase());
-		if(!hasText) return null;
+		if (!hasText) return null;
 		console.log("filter called");
 		return hasText;
 	});
